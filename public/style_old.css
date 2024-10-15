@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.navbar {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.nav {
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px #333;
+    padding: 10px;
+    height: 5rem;
+    width: 98%;
+}
+
+.nav .brand {
+    margin: 0% 30% 0% 5%;
+    padding: 10px 20px;
+    border-bottom: 2px solid darkorange;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+
+.nav ul {
+    display: inline-flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav li a {
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+.nav li a:hover {
+    border-bottom: 1px solid #333;
+}
+
+.notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.container-body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 10px;
+    margin-top: 6rem;
+}
+
+.section {
+    display: block;
+    padding: 10px;
+    min-height: 90vh;
+}
+
+.section .main {
+    padding: 5px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    width: max-content;
+    margin: 8px;
+}
+
+.section .header,
+.header .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header .search {
+    padding: .4rem;
+    width: 20%;
+    border-bottom: 1px solid #333;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.search img {
+    background-color: #333;
+    height: 2rem;
+    border-radius: 50%;
+    padding: .2rem;
+}
+
+.search input {
+    border: none;
+    border-bottom: 1px solid #333;
+    font-size: larger;
+    width: 50%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.box {
+    display: grid;
+    width: 80%;
+    margin-top: 1rem;
+    place-items: center;
+}
+
+.box .item {
+    padding: 20px 10px;
+    margin-bottom: 1rem;
+    border: 1px solid white;
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px gray;
+}
+
+.box .item:hover {
+    transition: .5s;
+    border: 1px solid #333;
+}
+
+.box .item ul {
+    list-style-type: none;
+    display: block;
+}
+
+.box .item ul li {
+    font-family: cursive;
+    padding: 1px;
+}
+
+.box .item ul i {
+    font-size: small;
+    color: gray;
+}
+
+.box .item .align {
+    display: inline-flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.box .item .align p {
+    font-size: small;
+}
+
+
+.btn button {
+    display: flex;
+    padding: 8px 20px;
+    border: none;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+.btn button:hover {
+    background-color: black;
+}
+
+.delete a {
+    text-decoration: none;
+}
+
+.container-body .sectiontwo {
+    display: grid;
+    place-items: center;
+    font-family: cursive;
+    max-height: 20vh;
+
+}
+
+.sectiontwo .form {
+    width: 30%;
+    padding: 3rem 2rem;
+    box-shadow: 1px 1px 5px #333;
+}
+
+.form h3 {
+    text-align: center;
+    padding: 2px;
+    margin-bottom: 15px;
+}
+
+.form .field {
+    padding: 10px;
+}
+
+.form .field .align {
+    display: flex;
+    align-items: center;
+}
+
+.form .field p {
+    padding: 10px;
+}
+
+.field .align input {
+    border: none;
+    font-size: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.form .field textarea {
+    border: none;
+    font-size: 15px;
+    height: 7rem;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid #333;
+}
+
+.form .field textarea:focus,
+.field input {
+    outline: none;
+}
+
+
+.modal {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    animation: fade-in linear forwards .7s;
+}
+
+.modal div {
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 0px 5px;
+    align-items: center;
+    height: 3rem;
+    gap: .5rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px lightgray;
+}
+
+@keyframes fade-in {
+    from {
+        top: -5rem;
+    }
+
+    to {
+        top: 1rem
+    }
+}
+
+.modal img {
+    width: 2rem;
+}
