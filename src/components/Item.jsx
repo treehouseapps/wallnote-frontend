@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 const Templete = (props) => {
     const link = "https://wallnote-backend.vercel.app/delete/"
-    const page = "https://wallnote-backend.vercel.app/modify/"
+    const page = "https://wallnote-frontend.vercel.app/modify/"
     return (
         <div className="border rotate">
             <div className="item">
