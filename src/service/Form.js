@@ -24,8 +24,8 @@ const NoteForm = () => {
                     'Content-Type': 'application/json'
                 }
             })
-            const json = response.json()
-            if (response) {
+            const json = await response.json()
+            if (response.ok) {
                 const min = () => {
                     setText(<Modal text={"Note Saved Succesfully"} />)
                     setTitle('')
