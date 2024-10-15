@@ -12,7 +12,7 @@ const NoteForm = () => {
     const [change, setChange] = useState(null)
     const [text, setText] = useState(null)
     const [BtnClas, setBtnClas] = useState("btn btn-outline-info")
-    const link = "/home/" + useParams().id
+    const link = "https://wallnote-backend.vercel.app/home/" + useParams().id
 
     useEffect(() => {
         const notes = async () => {
