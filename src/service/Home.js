@@ -11,7 +11,7 @@ const NoteService = () => {
     useEffect(() => {
         const notes = async () => {
             try {
-                const result = await fetch('/home')
+                const result = await fetch('https://wallnote-backend.vercel.app/home')
                 const json = await result.json()
                 setSpinner(null)
                 setNotes(json)
