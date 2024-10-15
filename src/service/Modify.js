@@ -44,7 +44,7 @@ const NoteForm = () => {
     }
     // Sending post requiest to server API
 
-    const updating = '/update/' + id
+    const updating = 'https://wallnote-backend.vercel.app/update/' + id
     const update = async (e) => {
         e.preventDefault()
         const notes = { title, body }
