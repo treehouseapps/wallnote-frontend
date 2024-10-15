@@ -17,7 +17,7 @@ const NoteForm = () => {
         e.preventDefault()
         const notes = { title, body }
         try {
-            const response = await fetch('/create', {
+            const response = await fetch('https://wallnote-backend.vercel.app/create', {
                 method: 'POST',
                 body: JSON.stringify(notes),
                 headers: {
